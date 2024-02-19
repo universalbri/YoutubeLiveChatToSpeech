@@ -18,7 +18,7 @@ n = len(sys.argv)
 if n == 2:
     # video id = HGOiuQUwqEw
     id = f"{sys.argv[1]}"
-    chat = pytchat.create(video_id="HGOiuQUwqEw")
+    chat = pytchat.create(video_id=id)
     engine = pyttsx3.init()
 
     while chat.is_alive():
